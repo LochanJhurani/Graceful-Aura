@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <style>
+         .container {
+            height: 100px;
+            width: 100%;
+            border: 2px solid black;
+
+            position: relative;
+            background-color: rgba(33, 33, 33, 0.337);
+        }
+
+        .search {
+            float: right;
+            padding-top: 40px;
+            padding-right: 10px;
+        }
+
+        .navbar {
+            padding-right: 550px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 75px;
+            font-weight: bolder;
+            font-size: larger;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            padding: 28px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding-bottom: 3px;
+        }
+
+        hr {
+            margin-top: 30px;
+        }
+        .buttons{
+            margin-top: 50px;
+          
+         margin-left: 600px;
+        }
+        .buttons .b{
+margin-left: 100px;
+        }
+        .col-4{
+          flex-basis:25%;
+          padding: 10px;
+          min-width: 200px;
+          margin-bottom: 50px;  
+        }
+        .col-4 img{
+            width:50%
+        }
+        .title{
+            text-align: center;
+            margin: 0 auto 80px;
+            position:static;
+            line-height: 60px;
+            color: rgb(91, 89, 89);
+        }
+        .footer{
+            background-color: #000;
+            color:#8a8a8a;
+            font-size: 14px;
+            padding:60px 0 20px ;
+        }
+        .footer h3{
+           color: #000;
+           margin-bottom: 20px; 
+        }
+        .footer-col-1, .footer-col-3, .footer-col-4{
+            min-width:250px ;
+            margin-bottom: 20px;
+        }
+        .footer-col-1{
+           flex-basis: 30%; 
+        }
+        .footer-col-3, .footer-col-4{
+           flex-basis: 12%;
+           text-align: center; 
+        }
+        .ul{
+           list-style-type: none; 
+        }
+
+        .row-2{
+            justify-content: space-between;
+            margin: 100px and 50px;
+        }
+        .select{
+            border: 1px solid #ff523b;
+            padding:5px ;
+        }
+        .select:focus{
+            outline:none ;
+
+        }
+        .page-btn{
+            margin: 0 auto 80px;
+
+        }
+        .page-btn span{
+            display:inline-block;
+            border:1px solid rgb(53, 52, 52);
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+
+        }
+        .page-btn span:hover{
+            background-color: rgb(109, 110, 110);
+            color: #fff;
+        }
+        .input:focus{
+            outline:none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/Lochan/ljlogo.jpeg" width="250" height="99">
+                <div class="search">
+                    <label for="search"> Search: </label>
+                   <input type="text" placeholder="search">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="ljhome.html" target="_blank"> Home</a></li>
+                        <li> <a href="fashion.html" target="_blank">Fashion</a></li>
+                        <li><a href="beauty.html" target="_blank"> Beauty</a></li>
+                        <li> <a href="account.html" target="_blank">Account</a></li>
+                        <li><a href="cart.
+                            html" target="_blank">Cart</a></li>
+
+                    </ul>
+                </nav>
+                <hr>
+            </div>
+    </header>
+    <main>
+        <h2 class="title">Fashion</h2>
+         <div class="buttons">
+        <button class="a">HIM</button>
+        <button class="b">HER</button>
+        </div>
+        <div class="row row-2">
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by rating</option>
+                <option>Short by sale</option>
+            </select>
+
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/Lochan/p1.jpeg.jpeg">
+                <h4>Crop Top</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>200/-</p>
+                <inpur type="number" value="1"></inpur>
+            <a href="" class="btn">Add to Cart</a>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="img/Lochan/p1.jpeg.jpeg">
+            <h4>Crop Top</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>200/-</p>
+            <inpur type="number" value="1"></inpur>
+            <a href="" class="btn">Add to Cart</a>
+
+        </div>
+        <div class="col-4">
+            <img src="img/Lochan/p1.jpeg.jpeg">
+            <h4>Crop Top</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>200/-</p>
+            <inpur type="number" value="1"></inpur>
+            <a href="" class="btn">Add to Cart</a>
+
+        </div>
+        <div class="col-4">
+            <img src="img/Lochan/p1.jpeg.jpeg">
+            <h4>Crop Top</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>200/-</p>
+            <inpur type="number" value="1"></inpur>
+            <a href="" class="btn">Add to Cart</a>
+
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                      <img src="img/Lochan/ljlogo.jpeg">
+
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Inftagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2024</p>
+            </div>
+        </div>
+    </main>
+    
+</div>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100px;
+            width: 100%;
+            border: 2px solid black;
+
+            position: relative;
+            background-color: rgba(33, 33, 33, 0.337);
+        }
+
+        .search {
+            float: right;
+            padding-top: 40px;
+            padding-right: 10px;
+        }
+
+        .navbar {
+            padding-right: 550px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 75px;
+            font-weight: bolder;
+            font-size: larger;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            padding: 28px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding-bottom: 3px;
+        }
+
+        hr {
+            margin-top: 30px;
+        }
+
+        .gallery-section {
+            margin-top: 10px;
+            display: grid;
+            gap: 1rem;
+            padding: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 7px solid rgb(88, 76, 76);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-section h2 {
+            font-size: 2em;
+            text-align: center;
+            padding-top: 10px;
+            color: #333;
+        }
+        .offer{
+            background-color: rgba(33, 33, 33, 0.337);;
+            margin-top: 80px;
+            padding: 30px;
+        }
+        .col-2 .offer-img{
+            padding: 20px;
+
+        }
+        .brands{
+            margin:100px auto;
+            
+        }
+        .col-5{
+            width: 160px;
+        }
+        .col-5 img{
+            width: 100px;
+            cursor: pointer;
+            filter:grayscale()
+        }
+        .col-5 img:hover{
+            filter:grayscale(0);
+        }
+        .footer{
+            background-color: #000;
+            color:#8a8a8a;
+            font-size: 14px;
+            padding:60px 0 20px ;
+        }
+        .footer h3{
+           color: #000;
+           margin-bottom: 20px; 
+        }
+        .footer-col-1, .footer-col-3, .footer-col-4{
+            min-width:250px ;
+            margin-bottom: 20px;
+        }
+        .footer-col-1{
+           flex-basis: 30%; 
+        }
+        .footer-col-3, .footer-col-4{
+           flex-basis: 12%;
+           text-align: center; 
+        }
+        .ul{
+           list-style-type: none; 
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/Lochan/ljlogo.jpeg" width="250" height="99">
+                <div class="search">
+                    <label for="search"> Search: </label>
+                   <input type="text" placeholder="search">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="ljhome.html" target="_blank"> Home</a></li>
+                        <li> <a href="fashion.html" target="_blank">Fashion</a></li>
+                        <li><a href="beauty.html" target="_blank"> Beauty</a></li>
+                        <li> <a href="account.html" target="_blank">Account</a></li>
+                        <li><a href="cart.
+                            html" target="_blank">Cart</a></li>
+
+                    </ul>
+                </nav>
+                <hr>
+            </div>
+    </header>
+    <main>
+        <section class="product-section">
+            <h2>Featured Products</h2>
+
+            <section class="gallery-section">
+                <div class="gallery-item">
+                    <img src="img/Lochan/p1.jpeg.jpeg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p2.jpeg.jpeg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p6.jpeg.jpeg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p7.jpeg.jpeg" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p9.jpeg.jpeg" alt="Gallery Image 5">
+                </div>
+                       
+                <div class="gallery-item">
+                    <img src="img/Lochan/p8.jpeg.jpeg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p3.jpeg.jpeg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p4.jpeg.jpeg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p10.jpeg.jpeg" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/p5.jpeg.jpeg" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro1.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro2.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro3.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro4.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro5.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro6.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro7.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro8.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro9.jpeg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Lochan/pro10.jpeg" alt="">
+                </div>
+
+                <div class="offer">
+                    <div class="small-container">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="img/Lochan/pro5.jpeg" class="offer-img">
+                            </div>
+                            <div class="col-2">
+                                <p>Exclusively Available on Graceful Aura</p>
+                                <h1>Skincare</h1>
+                                <small>Skincare is a range of practices that support skin integrity, enhance its appearance, and relieve skin conditions. They can include nutrition, avoidance of excessive sun exposure, and appropriate use of emollients.</small>
+                                <br>
+                                <button><a href="">Buy Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands">
+                    <div class="small-container">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Lochan/logo1 (1).jpeg"> 
+                            </div>
+                            <div class="col-5">
+                                <img src="img/Lochan/logo1 (2).jpeg"> 
+                            </div>
+                            <div class="col-5">
+                                <img src="img/Lochan/logo1 (3).jpeg"> 
+                            </div>
+                            <div class="col-5">
+                                <img src="img/Lochan/logo2.jpeg"> 
+                            </div>
+                            <div class="col-5">
+                                <img src="img/Lochan/logo3.jpeg"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col-1">
+                              <img src="img/Lochan/ljlogo.jpeg">
+
+                            </div>
+                            <div class="footer-col-3">
+                                <h3>Useful Links</h3>
+                                <ul>
+                                    <li>Coupons</li>
+                                    <li>Blog Post</li>
+                                    <li>Return Policy</li>
+                                    <li>Join Affiliate</li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-col-4">
+                                <h3>Follow Us</h3>
+                                <ul>
+                                    <li>Facebook</li>
+                                    <li>Twitter</li>
+                                    <li>Inftagram</li>
+                                    <li>YouTube</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="copyright">Copyright 2024</p>
+                    </div>
+                </div>
+
+              
+
+
+                
+    </main>
+</body>
+
+</html>

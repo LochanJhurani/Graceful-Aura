@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         <style>
+         .container {
+            height: 100px;
+            width: 100%;
+            border: 2px solid black;
+
+            position: relative;
+            background-color: rgba(33, 33, 33, 0.337);
+        }
+
+        .search {
+            float: right;
+            padding-top: 40px;
+            padding-right: 10px;
+        }
+
+        .navbar {
+            padding-right: 550px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 75px;
+            font-weight: bolder;
+            font-size: larger;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            padding: 28px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding-bottom: 3px;
+        }
+
+        hr {
+            margin-top: 30px;
+        }
+        .footer{
+            background-color: #000;
+            color:#8a8a8a;
+            font-size: 14px;
+            padding:60px 0 20px ;
+        }
+        .footer h3{
+           color: #000;
+           margin-bottom: 20px; 
+        }
+        .footer-col-1, .footer-col-3, .footer-col-4{
+            min-width:250px ;
+            margin-bottom: 20px;
+        }
+        .footer-col-1{
+           flex-basis: 30%; 
+        }
+        .footer-col-3, .footer-col-4{
+           flex-basis: 12%;
+           text-align: center; 
+        }
+        .ul{
+           list-style-type: none; 
+        }
+        .cart-page{
+            margin: 80px;
+        }
+        .table{
+            width:100%;
+            border-collapse: collapse;
+        }
+        .cart-info{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .th{
+            text-align: left;
+            padding:5px;
+            color:#fff;
+            background: #ff523b;
+            font-weight: normal;
+        }
+        .td{
+            padding:10px 5px;
+        }
+        .td input{
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+        }
+        .td a{
+            color: #8a8a8a;
+            font-size: 12px;
+        }
+        .td img{
+           width: 80px;
+           height: 80px;
+           margin-right: 10px; 
+        }
+        .total-price{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .total-price table{
+            border-top: 3px solid darkgray;
+            width:100%;
+            max-width: 350px;
+        }
+        .td:last-child{
+            text-align: right;
+        }
+        .th:last-child{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/Lochan/ljlogo.jpeg" width="250" height="99">
+                <div class="search">
+                    <label for="search"> Search: </label>
+                   <input type="text" placeholder="search">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="ljhome.html" target="_blank"> Home</a></li>
+                        <li> <a href="fashion.html" target="_blank">Fashion</a></li>
+                        <li><a href="beauty.html" target="_blank"> Beauty</a></li>
+                        <li> <a href="account.html" target="_blank">Account</a></li>
+                        <li><a href="cart.
+                            html" target="_blank">Cart</a></li>
+
+                    </ul>
+                </nav>
+                <hr>
+            </div>
+    </header>
+
+    <main>
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/Lochan/p1.jpeg.jpeg">
+                        </div>
+                        <p>Crop Top</p>
+                        <small>Price: 200/-</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>200/-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/Lochan/p1.jpeg.jpeg">
+                        </div>
+                        <p>Crop Top</p>
+                        <small>Price: 200/-</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>200/-</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/Lochan/p1.jpeg.jpeg">
+                        </div>
+                        <p>Crop Top</p>
+                        <small>Price: 200/-</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>200/-</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>200/-</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>35/-</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>235/-</td>
+                    </tr>
+            
+                </table>
+            </div>
+        </div>
+           
+
+
+
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                      <img src="img/Lochan/ljlogo.jpeg">
+
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Inftagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2024</p>
+            </div>
+        </div>
+
+    </main>
